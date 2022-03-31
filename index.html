@@ -13,25 +13,23 @@
             <form id="wthForm">
             <div class="form-group">
                 <label class="col-form-label mt-4" for="inputDefault">What is the current temparature?</label>
-                <input type="text" class="form-control text-center" placeholder="45°F or 7°C" id="inputDefault">
+                <input type="text" class="form-control text-center" placeholder="45°" id="inputDefault" required>
+                <input type="checkbox" id="isItC"> Is this celcius?
               </div>
-              <fieldset class="form-group text-center">
-                <legend class="mt-4">Is it Raining?</legend>
-                <div class="form-check d-flex justify-content-around">
-                  <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-                    Yes
-                  </label>
-                  <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-                    No
-                  </label>
-                </div>
+              <div class="form-group text-center">
+                <label class="col-form-label mt-4" for="inputDefault">Is it raining?</label>
+                <input type="text" class="form-control text-center" placeholder="Yes" id="inputRain" required>
+              </div>
                 <button type="submit" id="sbmtButton" class="btn btn-info my-2">Submit</button>
             </form>
         </div>
         <div id="results">
-        
+        <h2>Jacket?</h2>
+        <p id="jacketEl"></p>
+        <h2>Temperature</h2>
+        <p id="temparatureEl"></p>
+         <h2>Umbrella?</h2>
+         <p id="umbrellaEl"></p>
         </div>
     </div>
     <script src="script.js"></script>
